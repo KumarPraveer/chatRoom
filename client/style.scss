@@ -7,6 +7,7 @@
 
 .main-container {
   height: 100vh;
+
   .header-section {
     position: sticky;
     top: 0;
@@ -31,12 +32,21 @@
   position: relative;
   #messageForm {
     width: 87%;
-    display: flex;
-    justify-content: space-between;
     position: sticky;
     margin: 0 auto;
     bottom: 10px;
-    text-align: center;
+    .typing-effect {
+      margin: 0 auto;
+      padding: 1em;
+      background-color: white;
+      span {
+        color: rgb(96, 208, 96);
+      }
+      color: gray;
+    }
+    .input-content {
+      display: flex;
+    }
     #messageInput {
       padding: 0.5em;
       width: 100%;
@@ -55,13 +65,9 @@
     scroll-behavior: auto;
     width: 87%;
     margin: 0 auto;
+
     padding: 1em 2em;
-    .typing-effect {
-      span {
-        color: rgb(96, 208, 96);
-      }
-      color: gray;
-    }
+
     .notification {
       color: rgb(96, 208, 96);
       text-align: center;

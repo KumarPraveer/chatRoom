@@ -32,12 +32,21 @@
 }
 .main-container #messageForm {
   width: 87%;
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   margin: 0 auto;
   bottom: 10px;
-  text-align: center;
+}
+.main-container #messageForm .typing-effect {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: white;
+  color: gray;
+}
+.main-container #messageForm .typing-effect span {
+  color: rgb(96, 208, 96);
+}
+.main-container #messageForm .input-content {
+  display: flex;
 }
 .main-container #messageForm #messageInput {
   padding: 0.5em;
@@ -57,12 +66,6 @@
   width: 87%;
   margin: 0 auto;
   padding: 1em 2em;
-}
-.main-container .message-container .typing-effect {
-  color: gray;
-}
-.main-container .message-container .typing-effect span {
-  color: rgb(96, 208, 96);
 }
 .main-container .message-container .notification {
   color: rgb(96, 208, 96);
