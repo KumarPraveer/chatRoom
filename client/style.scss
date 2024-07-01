@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+
+.main-container {
+  height: 100vh;
+  .header-section {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 1.4em;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    span {
+      color: rgb(96, 208, 96);
+    }
+    .online-user {
+      color: white;
+      span {
+        color: rgb(96, 208, 96);
+      }
+    }
+  }
+  position: relative;
+  #messageForm {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    margin: 0 auto;
+    bottom: 10px;
+    text-align: center;
+    #messageInput {
+      padding: 0.5em;
+      width: 100%;
+      border: 2px solid rgb(96, 208, 96);
+    }
+    button {
+      padding: 0.6em 1.5em;
+      border: none;
+      background-color: rgb(96, 208, 96);
+      color: white;
+    }
+  }
+  .message-container {
+    overflow-y: scroll;
+    height: 80%;
+    scroll-behavior: auto;
+    width: 87%;
+    margin: 0 auto;
+    padding: 1em 2em;
+    .typing-effect {
+      span {
+        color: rgb(96, 208, 96);
+      }
+      color: gray;
+    }
+    .notification {
+      color: rgb(96, 208, 96);
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .message-content {
+      display: flex;
+      align-items: center;
+      margin-top: 1em;
+      .userImage {
+        img {
+          height: 40px;
+          object-fit: contain;
+        }
+      }
+      .content-section {
+        margin-left: 1em;
+        .username {
+          font-size: small;
+          color: rgb(96, 208, 96);
+        }
+        .message {
+        }
+        .time {
+          text-align: end;
+          font-size: small;
+          color: rgb(96, 208, 96);
+        }
+      }
+    }
+  }
+}

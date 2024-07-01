@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+
+.main-container {
+  height: 100vh;
+  position: relative;
+}
+.main-container .header-section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 1em;
+  font-size: 1.4em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.main-container .header-section span {
+  color: rgb(96, 208, 96);
+}
+.main-container .header-section .online-user {
+  color: white;
+}
+.main-container .header-section .online-user span {
+  color: rgb(96, 208, 96);
+}
+.main-container #messageForm {
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  margin: 0 auto;
+  bottom: 10px;
+  text-align: center;
+}
+.main-container #messageForm #messageInput {
+  padding: 0.5em;
+  width: 100%;
+  border: 2px solid rgb(96, 208, 96);
+}
+.main-container #messageForm button {
+  padding: 0.6em 1.5em;
+  border: none;
+  background-color: rgb(96, 208, 96);
+  color: white;
+}
+.main-container .message-container {
+  overflow-y: scroll;
+  height: 80%;
+  scroll-behavior: auto;
+  width: 87%;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+.main-container .message-container .typing-effect {
+  color: gray;
+}
+.main-container .message-container .typing-effect span {
+  color: rgb(96, 208, 96);
+}
+.main-container .message-container .notification {
+  color: rgb(96, 208, 96);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container .message-container .message-content {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+.main-container .message-container .message-content .userImage img {
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-container .message-container .message-content .content-section {
+  margin-left: 1em;
+}
+.main-container .message-container .message-content .content-section .username {
+  font-size: small;
+  color: rgb(96, 208, 96);
+}
+.main-container .message-container .message-content .content-section .time {
+  text-align: end;
+  font-size: small;
+  color: rgb(96, 208, 96);
+}/*# sourceMappingURL=style.css.map */
