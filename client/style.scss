@@ -7,7 +7,6 @@
 
 .main-container {
   height: 100vh;
-
   .header-section {
     position: sticky;
     top: 0;
@@ -37,7 +36,7 @@
     bottom: 10px;
     .typing-effect {
       margin: 0 auto;
-      padding: 1em;
+      padding: 1em 0em;
       background-color: white;
       span {
         color: rgb(96, 208, 96);
@@ -63,11 +62,9 @@
     overflow-y: scroll;
     height: 80%;
     scroll-behavior: auto;
-    width: 87%;
+    width: 100%;
     margin: 0 auto;
-
     padding: 1em 2em;
-
     .notification {
       color: rgb(96, 208, 96);
       text-align: center;

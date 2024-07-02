@@ -38,7 +38,7 @@
 }
 .main-container #messageForm .typing-effect {
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 0em;
   background-color: white;
   color: gray;
 }
@@ -63,7 +63,7 @@
   overflow-y: scroll;
   height: 80%;
   scroll-behavior: auto;
-  width: 87%;
+  width: 100%;
   margin: 0 auto;
   padding: 1em 2em;
 }

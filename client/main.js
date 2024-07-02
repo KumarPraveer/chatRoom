@@ -62,11 +62,11 @@ messageForm.addEventListener("submit", (e) => {
     const messageContent = document.createElement("div");
     messageContent.classList.add("message-content");
 
-    const userImage = document.createElement("div");
-    userImage.classList.add("userImage");
+    // const userImage = document.createElement("div");
+    // userImage.classList.add("userImage");
 
-    const img = document.createElement("img");
-    img.src = "https://picsum.photos/200/300";
+    // const img = document.createElement("img");
+    // img.src = "https://picsum.photos/200/300";
 
     const contentSection = document.createElement("div");
     contentSection.classList.add("content-section");
@@ -87,11 +87,11 @@ messageForm.addEventListener("submit", (e) => {
     time.textContent = hours + ":" + minutes;
 
     // Append elements
-    userImage.appendChild(img);
+    // userImage.appendChild(img);
+    // messageContent.appendChild(userImage);
     contentSection.appendChild(username);
     contentSection.appendChild(message);
     contentSection.appendChild(time);
-    messageContent.appendChild(userImage);
     messageContent.appendChild(contentSection);
 
     MessageContainer.appendChild(messageContent);
@@ -105,11 +105,11 @@ socket.on("broadcast-message", (messageData) => {
   const messageContent = document.createElement("div");
   messageContent.classList.add("message-content");
 
-  const userImage = document.createElement("div");
-  userImage.classList.add("userImage");
+  // const userImage = document.createElement("div");
+  // userImage.classList.add("userImage");
 
-  const img = document.createElement("img");
-  img.src = "https://picsum.photos/200/300";
+  // const img = document.createElement("img");
+  // img.src = "https://picsum.photos/200/300";
 
   const contentSection = document.createElement("div");
   contentSection.classList.add("content-section");
@@ -130,11 +130,11 @@ socket.on("broadcast-message", (messageData) => {
   time.textContent = hours + ":" + minutes;
 
   // Append elements
-  userImage.appendChild(img);
+  // userImage.appendChild(img);
+  // messageContent.appendChild(userImage);
   contentSection.appendChild(username);
   contentSection.appendChild(message);
   contentSection.appendChild(time);
-  messageContent.appendChild(userImage);
   messageContent.appendChild(contentSection);
 
   MessageContainer.appendChild(messageContent);
